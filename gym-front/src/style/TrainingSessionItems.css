@@ -1,0 +1,102 @@
+.training-item-list {
+    margin-top: 20px;
+  }
+  
+  .item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .item-exercise-name {
+    flex: 1;
+  }
+  
+  .item-reps {
+    margin-left: 20px;
+  }
+
+  .item-index {
+    width: 30px;
+    text-align: center;
+  }
+
+  .btn-remove {
+    width: 30px; /* Definiše širinu dugmeta */
+    height: 30px; /* Definiše visinu dugmeta */
+    border-radius: 50%; /* Pravi dugme okruglim */
+    background-color: #dc3545; /* Boja pozadine */
+    color: white; /* Boja teksta */
+    border: none; /* Uklanja ivice dugmeta */
+    display: flex; /* Omogućava postavljanje ikonice */
+    justify-content: center; /* Centrira ikonicu unutar dugmeta */
+    align-items: center; /* Centrira ikonicu unutar dugmeta */
+    margin-left: 10px; /* Razmak između dugmeta i teksta */
+  }
+  
+  .btn-remove i {
+    font-size: 20px; /* Veličina ikonice */
+  }
+  
+
+  .btn-add {
+    width: 40px; /* Definiše širinu dugmeta */
+    height: 40px; /* Definiše visinu dugmeta */
+    border-radius: 100%; /* Pravi dugme okruglim */
+    background-color: #151415; /* Boja pozadine */
+    color: white; /* Boja teksta */
+    /* border: none; Uklanja ivice dugmeta */
+    display: flex; /* Omogućava postavljanje ikonice */
+    justify-content: center; /* Centrira ikonicu unutar dugmeta */
+    align-items: center; /* Centrira ikonicu unutar dugmeta */
+    margin-left: 30px; /* Razmak između dugmeta i teksta */
+    margin-right: 30px;
+  }
+
+  .session-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/gymbackground.jpg');
+    background-size: cover; /* Omogućava da slika pokriva celu površinu */
+    background-position: center; /* Centrira sliku */
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+
+ 
+
+  .session-content-container {
+    width: 800px;
+    max-height: 95%;
+    overflow: scroll;
+    border: 4px solid #656464; /* Dodaje tanku ivicu */
+    border-radius: 8px; /* Zaobljava rubove */
+    padding: 16px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodaje sjenu */
+    background-color: white;
+    
+}
+
+.sessions-content-container {
+  width: 1200px;
+  max-height: 650px;
+  overflow: scroll;
+
+  border: 4px solid #656464; /* Dodaje tanku ivicu */
+  border-radius: 8px; /* Zaobljava rubove */
+  padding: 16px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodaje sjenu */
+  background-color: white;
+  
+}
+
+
+
+

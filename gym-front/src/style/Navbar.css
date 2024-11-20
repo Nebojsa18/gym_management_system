@@ -1,0 +1,232 @@
+.navbar {
+  background: linear-gradient(90deg, rgb(27, 28, 28) 0%, rgb(26, 23, 23) 100%);
+  /* height: auto; Postavljamo visinu na auto kako bi se prilagodila sadržaju */
+  height: 65px;
+  
+
+  display: flex;
+  justify-content: space-between; /* Umesto space-around kako bi elementi bili raspoređeni na krajevima */
+  align-items: center;
+  font-size: 1.4rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 20px; /* Dodajemo padding kako bi elementi bili udaljeni od ivica */
+}
+
+
+.navbar-container {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  height: 65px;
+  justify-content: flex-start;
+  align-items: center;
+  /* max-width: 1500px; */
+  margin-right: 80px;
+  /* padding-right: 200px; */
+}
+
+
+
+.navbar-logo {
+  height: 60px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.logged-coach-info {
+  color: #fff;
+  margin-left: auto;
+  max-width: 300px;
+}
+
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  height: auto; /* Postavljamo visinu na auto kako bi se prilagodila sadržaju */
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px; /* Promijenite 16px u željenu veličinu fonta */
+
+  padding: 0.5rem 1rem;
+}
+
+
+.nav-user{
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-logout {
+  color: #f40808;
+  text-decoration: none;
+  padding: 0rem 0.5rem;
+}
+
+.nav-logout:hover {
+  border-bottom: 4px solid #f30707;
+  border: 4px solid #f30707;
+  border-radius: 10px;
+}
+
+.nav-links:hover {
+  border-bottom: 4px solid #fff;
+}
+
+.nav-group {
+  position: relative;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: center;
+  background-color: #242222;
+  border: 1px solid #7c7c7c;
+  border-radius: 10px;
+  display: none;
+  /* padding-top: 6px; */
+  z-index: 3;
+  /* padding-bottom: 6px; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-item:hover .nav-dropdown {
+  display: block;
+}
+
+
+
+.user-icon {
+  color: #fff; /* Boja ikonice */
+  font-size: 1.5rem; /* Veličina ikonice */
+  cursor: pointer; /* Promena kursora na pokazivač kada se pređe preko ikonice */
+  
+}
+
+
+.nav-dropdown-item {
+  display: block;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 80%;
+  padding: 10px 10px;
+}
+
+.nav-dropdown-item:hover {
+  background-color: #445;
+}
+
+.nav__toggle,
+.nav__close {
+ font-size: 1.5rem;
+ color: var(--title-color);
+ cursor: pointer;
+ z-index: 999;
+
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+ }
+ 
+ 
+
+ .nav__list {
+  display: flex;
+  margin-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 5%;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2.5rem;
+ }
+
+ .user{
+  padding-left: 60px;
+ }
+
+
+@media screen and (max-width: 1245px) {
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 6rem 3rem 0;
+    transition: right 0.4s;
+    z-index: 999;
+
+  }
+
+  .navbar-container-show-menu {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: hsla(0, 0%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    /* padding: 6rem 2rem 0; */
+    padding: 30% 10% 0;
+    transition: right 0.4s;
+  }
+ }
+
+ @media screen and (min-width: 1246px) {
+  .navbar {
+    height: calc(var(--header-height) + 1rem);
+  }
+  .nav__toggle{
+    display: none;
+  }
+
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 2.5rem;
+  }
+  
+ 
+  /* .nav__list {
+    flex-direction: row;
+    column-gap: 2.5rem;
+  } */
+ }
+ 
+
+ 

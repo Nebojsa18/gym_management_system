@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+  
+   
+  font-optical-sizing: auto;
+  font-style: normal; 
+  /* background-image: url("./images/gymbackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* .pozadina{ */
+    /* width: 50% !important; Širina kontejnera od 50% širine roditeljskog elementa */
+    /* margin: 0 auto; Centriranje kontejnera */
+    /* border: 5px solid #000; Crna ivica debljine 1px */
+    /* border-radius: 10px; Radijus zaobljenih ivica */
+    /* padding: 16px; Unutarnji razmak od 16 piksela */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Sjena sa određenim parametrima */
+    /* background-color: rgba(196, 194, 194, 0.9); Bijela boja pozadine */
+/* } */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/gymbackground.jpg');
+  background-size: cover; /* Omogućava da slika pokriva celu površinu */
+  background-position: center; /* Centrira sliku */
+  position: relative;
+  color: #fff; /* Bela boja teksta */
+  text-align: center;
+}
+
+/* .home-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 45%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.703);
+  z-index: 0;
+  border-radius: 20px; 
+} */
+
+
+.home-container .content-container {
+  
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.703);
+  border-radius: 20px; /* Dodajemo zaobljeni rub */
+  max-width: 600px;
+  padding: 20px;
+  color: #fff;
+}
+
+.home-container .heading {
+  font-size: 3rem;
+  /* font-family: "Roboto Slab", sans-serif; */
+  /* margin-bottom: 20px;s */
+}
+
+.home-container .description {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.home-container .cta-button {
+  background-color: #000; /* Crna boja pozadine */
+  color: #fff; /* Bela boja teksta */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-container .cta-button:hover {
+  background-color: #333; /* Tamnosiva boja pozadine prilikom prelaska mišem */
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/gymbackground.jpg');
+  background-size: cover; /* Omogućava da slika pokriva celu površinu */
+  background-position: center; /* Centrira sliku */
+  position: relative;
+  color: #f0eded; /* Bela boja teksta */
+  text-align: center;
+}
+
+/* .login-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 45%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.703); 
+  z-index: 0;
+  border-radius: 20px; 
+} */
+
+
+.login-container .content-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.703);
+  border-radius: 20px; /* Dodajemo zaobljeni rub */
+
+  z-index: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.login-container .cta-button {
+  background-color: #000; /* Crna boja pozadine */
+  color: #fff; /* Bela boja teksta */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .cta-button:hover {
+  background-color: #ebeaea; /* Promenite boju pozadine na svetlo sivu prilikom hovera */
+  color: #000000;
+}
